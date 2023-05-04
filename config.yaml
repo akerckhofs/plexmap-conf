@@ -1,0 +1,67 @@
+plexgis:
+    customer_name: MyCSN
+
+    src_srid: 31370
+    src_proj: "+proj=lcc +lat_0=90 +lon_0=4.36748666666667 +lat_1=51.1666672333333 +lat_2=49.8333339 +x_0=150000.013 +y_0=5400088.438 +ellps=intl +towgs84=-106.8686,52.2978,-103.7239,-0.3366,0.457,-1.8422,-1.2747 +units=m +no_defs +type=crs"
+
+viewer:
+    language: en
+
+    style:
+        paths:
+            header_logo_center: img/mycsn_logo.png
+
+editor:
+    print:
+        logo_right: img/mycsn_logo.png
+
+presenting:
+    default_base_layer: base-layer
+
+switchboard:
+    preview:
+        initial_poi:
+            lat: 50.9247731
+            lon: 5.129633
+            elevation: 6000
+
+backend:
+    login_logo_path: img/mycsn_logo.png
+    language: en
+
+    components_state:
+        protools3d: true
+        plexmap_viewer_editor: true
+        plexmap_viewer_profile: true
+        events: true
+        street360: true
+
+coordinates:
+    coordinate_systems:
+        - id: 'EPSG:31370'
+          proj: '+proj=lcc +lat_0=90 +lon_0=4.36748666666667 +lat_1=51.1666672333333 +lat_2=49.8333339 +x_0=150000.013 +y_0=5400088.438 +ellps=intl +towgs84=-106.8686,52.2978,-103.7239,-0.3366,0.457,-1.8422,-1.2747 +units=m +no_defs +type=crs'
+          title: 'Belgian Lambert 72'
+        - id: 'EPSG:28992'
+          proj: '+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +units=m +no_defs'
+          title: 'Amersfoort / RD New'
+        - id: 'EPSG:25832'
+          proj: '+proj=utm +zone=32 +ellps=GRS80 +units=m +no_defs'
+          title: 'ETRS89 UTM Zone 32N'
+        - id: 'EPSG:25833'
+          proj: '+proj=utm +zone=33 +ellps=GRS80 +units=m +no_defs'
+          title: 'ETRS89 UTM Zone 33N'
+        - id: 'EPSG:4326'
+          proj: '+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs'
+          title: 'WGS 84 (Geographische Koordinaten)'
+        - id: 'EPSG:31466'
+          proj: '+proj=tmerc +lat_0=0 +lon_0=6 +k=1 +x_0=2500000 +y_0=0 +ellps=bessel +datum=potsdam +units=m +no_defs '
+          title: 'DHDN Gauß-Krüger Zone 2'
+        - id: 'EPSG:31467'
+          proj: '+proj=tmerc +lat_0=0 +lon_0=9 +k=1 +x_0=3500000 +y_0=0 +ellps=bessel +datum=potsdam +units=m +no_defs'
+          title: 'DHDN Gauß-Krüger Zone 3'
+        - id: 'EPSG:3857'
+          proj: '+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs'
+          title: 'Pseudo-Mercator'
+        - id: 'EPSG:31255'
+          proj: '+proj=tmerc +lat_0=0 +lon_0=13.33333333333333 +k=1 +x_0=0 +y_0=-5000000 +ellps=bessel +towgs84=577.326,90.129,463.919,5.137,1.474,5.297,2.4232 +units=m +no_defs'
+          title: 'Austria GK Central'
